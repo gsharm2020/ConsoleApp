@@ -10,22 +10,26 @@ namespace ConsoleTestApp
     {
         //public  variables
         public static double eqSide1, eqSide2, eqSide3;
+        public static string actualResult;
 
-        public static void TrianlgeSidesInput(double side1, double side2, double side3)
+        public static string TrianlgeSidesInput(double side1, double side2, double side3)
         {
             string TriangleType = "";
             if ((side1 == side2) && (side1 == side3))
             {
                 TriangleType = "Equilateral";
+                actualResult = "Equilateral";
             }
             else if ((side1 == side2) || (side1 == side3) || (side2 == side3))
             {
                 TriangleType = "Isosceles";
                 eqSide1 = side1; eqSide2 = side2; eqSide3 = side3;
+                actualResult = "Isosceles";
             }
             else
             {
                 TriangleType = "Scalene";
+                actualResult = "Scalene";
             }
 
 
@@ -52,6 +56,8 @@ namespace ConsoleTestApp
                     Console.WriteLine("Sorry ! Try Again !");
                     break;
             }
+
+            return actualResult;
 
         }
         static void Main(string[] args)
