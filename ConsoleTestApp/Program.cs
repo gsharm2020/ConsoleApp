@@ -67,7 +67,7 @@ namespace ConsoleTestApp
             Trigonometric.TrianlgeSidesInput(12, 12, 12);
             Console.ReadLine();
 
-            Trigonometric.TrianlgeSidesInput(12, 12, 15);
+            Trigonometric.TrianlgeSidesInput(12, 12, 12);
             Console.ReadLine();
 
             Trigonometric.TrianlgeSidesInput(12, 20, 25);
